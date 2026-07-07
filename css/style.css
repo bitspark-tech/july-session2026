@@ -1,17 +1,17 @@
 header {
-    background: #0f172a;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: #0f172a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #2563eb, #1e3a8a);
-    color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: white;
 }
 
 #about,
@@ -22,22 +22,190 @@ header {
 #services,
 #testimonials,
 #contact {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .project-card,
 .service-card,
 .skill-card,
 .testimonial-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 30px;
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
+
+.student-content {
+  padding: 1.2rem 0;
+}
+
+.student-content .eyebrow {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.student-content .hero-header,
+.student-content .hero-panel,
+.student-content .about-card,
+.student-content .contact-card,
+.student-content .footer-content {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.student-content .hero-panel,
+.student-content .about-card,
+.student-content .contact-card {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.student-content .about-card {
+  background: white;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  align-items: flex-start;
+}
+
+.student-content .about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  width: min(320px, 100%);
+}
+
+.student-content .about-highlights div {
+  background: #f8fafc;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.student-content .about-highlights strong {
+  display: block;
+  font-size: 1rem;
+  color: #2563eb;
+}
+
+.student-content .hero-actions,
+.student-content .footer-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.student-content .btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.student-content .btn-primary {
+  background: white;
+  color: #1d4ed8;
+}
+
+.student-content .btn-secondary {
+  background: rgba(255,255,255,0.16);
+  color: white;
+}
+
+.student-content .hero-badge {
+  background: rgba(255,255,255,0.16);
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.student-content .skills-grid,
+.student-content .project-grid,
+.student-content .service-grid,
+.student-content .testimonial-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.student-content .timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.student-content .timeline-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #2563eb;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.student-content .timeline-meta {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin-top: -0.2rem;
+}
+
+.student-content .text-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.student-content .contact-form {
+  display: grid;
+  gap: 0.75rem;
+  width: min(420px, 100%);
+}
+
+.student-content .contact-form input,
+.student-content .contact-form textarea,
+.student-content .contact-form button {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  font: inherit;
+}
+
+.student-content .contact-form button {
+  background: white;
+  color: #1d4ed8;
+  cursor: pointer;
+  border: none;
+}
+
+.student-content .footer-content {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+  color: #475569;
+}
+
+.student-content .footer-content a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.student-content p,
+.student-content h2,
+.student-content h3,
+.student-content h4 {
+  margin: 0.3rem 0;
